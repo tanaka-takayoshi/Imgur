@@ -41,7 +41,6 @@ namespace Imgur
 
         public override void Configure(Container container)
         {
-            
         }
     }
 }
