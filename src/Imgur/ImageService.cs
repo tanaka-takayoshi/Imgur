@@ -41,8 +41,8 @@ namespace Imgur
     public class ImageService : Service
     {
         const int ThumbnailSize = 100;
-        readonly string UploadsDir = "uploads";
-        readonly string ThumbnailsDir = "uploads/thumbnails";
+        readonly string UploadsDir = "wwwroot/uploads";
+        readonly string ThumbnailsDir = "wwwroot/uploads/thumbnails";
         readonly List<string> ImageSizes = new[] { "320x480", "640x960", "640x1136", "768x1024", "1536x2048" }.ToList();
 
         public object Get(Images request)

@@ -1,0 +1,1 @@
+Used to store resized images on deployed server

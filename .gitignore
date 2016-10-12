@@ -141,6 +141,9 @@ csx/
 # Windows Store app package directory
 AppPackages/
 
+#.NET Core lock files
+*.json.lock
+
 # Others
 sql/
 *.Cache
