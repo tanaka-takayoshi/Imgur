@@ -18,7 +18,7 @@
             "environment": [
                 {
                     "name": "VIRTUAL_HOST",
-                    "value": "imgur.layoric.org"
+                    "value": "imgur.netcore.io"
                 },
                 {
                     "name": "VIRTUAL_PORT",
