@@ -189,7 +189,7 @@ namespace Imgur
         public object Any(Reset request)
         {
             VirtualFiles.DeleteFiles(VirtualFiles.GetDirectory(UploadsDir).GetAllMatchingFiles("*.png"));
-            VirtualFiles.GetFile("preset-urls.txt").ReadAllText().ReadLines().ToList()
+            VirtualFileSources.GetFile("preset-urls.txt").ReadAllText().ReadLines().ToList()
                 .ForEach(url => WriteImage(new MemoryStream(url.Trim().GetBytesFromUrl())));
 
             return HttpResult.Redirect("/");
