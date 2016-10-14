@@ -28,6 +28,8 @@ namespace Imgur
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+
             app.UseServiceStack(new AppHost());
         }
     }
